@@ -5,11 +5,19 @@
   <title>
     Gathering input
   </title>
+  <script>
+  function getName(){
+    var fullName, fullName1;
+    fullName = document.getElementById("first").value;
+    fullName1 = document.getElementById("last").value;
+    document.getElementById("message").innerHTML = fullName + " " + fullName1;
+  }
+  </script>
 </head>
 <body>
   <form>
-    <input type="text" id="first"><br>
-    <input type="text" id="last"><br>
+    First<input type="text" id="first"><br>
+    Last<input type="text" id="last"><br>
 </form>
 <button type="button" id="doneButton" onclick="getName();">
   Done
